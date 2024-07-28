@@ -182,7 +182,7 @@
         border-radius: 50%;
         opacity: 0.8;
         animation: move-stars var(--duration) forwards;
-        z-index: 1; /* Behind the cat */
+        z-index: 1;
       }
 
       @keyframes move-stars {
@@ -196,7 +196,17 @@
         font-size: 36px;
         margin-top: 20px;
         text-align: center;
-        z-index: 2; /* Above the stars */
+        z-index: 2; 
+        position: relative;
+      }
+
+      .aditya-text {
+        font-family: 'Cute Font', sans-serif;
+        color: white;
+        font-size: 20px;
+        margin-top: 1px;
+        text-align: center;
+        z-index: 2;
         position: relative;
       }
     </style>
@@ -216,6 +226,7 @@
       </div>
     </div>
     <div class="meowgpt-text">MeowGPT</div>
+    <div class="aditya-text">Aditya Raj</div>
 
     <script>
       function createStars() {
